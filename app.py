@@ -9,7 +9,7 @@ CORS(app)
 def home():
     
     # Return JSON response containing the GitHub URL, current datetime, and email
-    return jsonify(email="omobolanlehazeezat@gmail.com", current_datetime=datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"), GitHub_url="https://github.com/simplicityf/hng_task1.git")
+    return jsonify(GitHub_url="https://github.com/simplicityf/hng_task1.git", current_datetime=datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"), email="omobolanlehazeezat@gmail.com")
 
 
 if __name__ == '__main__':
