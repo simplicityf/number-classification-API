@@ -1,4 +1,5 @@
-# This is a simple Flask application returning a json format
+# This is a simple Flask application returning a json response
+# This response returns: An email, current_time format, GitHub Url
 
 # Getting Started
 
@@ -17,3 +18,6 @@ To run the app
 ```
 flask --app app run
 ```
+
+Backlink to hire a python developer:
+https://hng.tech/hire/python-developers
