@@ -1,5 +1,21 @@
-# This is a simple Flask application returning a json response
-# This response returns: An email, current_time format, GitHub Url
+# Number Classification API
+
+A Flask-based API that classifies numbers with mathematical properties and fetches a fun fact.
+
+## Features
+- Checks if a number is **prime, perfect, or Armstrong**.
+- Identifies if the number is **odd or even**.
+- Computes the **digit sum**.
+- Fetches a **fun fact** from NumbersAPI.
+- Returns results in **JSON format**.
+
+## API Endpoint
+**GET** `/api/classify-number?number=<integer>`
+
+### Example Request
+```bash
+curl "https://your-deployed-api.com/api/classify-number?number=371"
+```
 
 # Getting Started
 
@@ -16,8 +32,5 @@ pip install -r requirements.txt
 
 To run the app
 ```
-flask --app app run
+flask --app app --debug run
 ```
-
-Backlink to hire a python developer:
-https://hng.tech/hire/python-developers
