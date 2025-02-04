@@ -1,5 +1,4 @@
 from flask import Flask, jsonify, request
-import datetime
 from flask_cors import CORS
 from functions import get_fun_fact, is_armstrong, is_prime, is_perfect
 import json
@@ -13,7 +12,15 @@ def home():
     
     # Return an error if query is not pass or query is an alphabet
     if query is None or not query.isnumeric():
-        return jsonify(number="alphabet", error="true"), 400
+        result = {
+            "number": "alphabet",
+            "error": True
+        }
+        return app.response_class(
+            response=json.dumps(result, indent=4, sort_keys=False),  # Prevent sorting
+            status=400,
+            mimetype="application/json"
+            )
     else:
         num = int(query)
         properties = []
